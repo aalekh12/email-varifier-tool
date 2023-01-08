@@ -11,7 +11,7 @@ import (
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Println("domain,hasMX,hasSPF,spfRecord,hasDMARC,dmarcRecord \n")
+	fmt.Println("domain,hasMX,hasSPF,spfRecord,hasDMARC,dmarcRecord\n")
 	for scanner.Scan() {
 		EmailVarifier(scanner.Text())
 	}
